@@ -14,7 +14,7 @@ body {
   text-align: center;
   border-radius: 5px;
   min-height: 50px;
-  
+
 }
 h2 {
   color: #fff;
@@ -32,7 +32,7 @@ input:checked+p {
 }
 input[type="text"]{
   border: none;
-
+  
 }
 form {
   text-align: center;

@@ -1,29 +1,29 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const date = require(__dirname+"/getdate.js");
 const app = express();
 app.use(express.static('public'));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
-var items=[];
+let items=[];
+let workitems=[];
 app.get("/", function(req, res) {
-  var today = new Date();
-  var options = {
-    weekday: "long",
-    month: "long",
-    day: "numeric"
-  };
-  var currentday = today.toLocaleDateString("en-US",options);
+  var currentday = date.getDateee();
   res.render("index", {kindofday:currentday, listItems:items});
 
 })
-app.post("/",function(req,res){
-  items.push(req.body.todo);
-  res.redirect("/");
+app.get("/work", function(req,res){
+  res.render("index", {kindofday:"Work list", listItems:workitems});
 })
-
-
-
-
+app.post("/",function(req,res){
+  if (req.body.submit==="Work"){
+    workitems.push(req.body.todo);
+    res.redirect("/work");
+  } else {
+    items.push(req.body.todo);
+    res.redirect("/");
+  }
+})
 
 
 

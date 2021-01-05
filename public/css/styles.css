@@ -32,7 +32,7 @@ input:checked+p {
 }
 input[type="text"]{
   border: none;
-  
+
 }
 form {
   text-align: center;
@@ -52,4 +52,7 @@ button{
   color: #fff;
   width: 45px;
   height: 45px;
+}
+footer{
+  text-align: center;
 }

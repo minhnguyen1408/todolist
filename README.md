@@ -17,8 +17,8 @@ A efficient to-do list application built with NodeJs and related frameworks.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-to-do-list-app.git`
-2. Navigate to the project directory: `cd your-to-do-list-app`
+1. Clone the repository: `git clone https://github.com/minhnguyen1408/todolist.git`
+2. Navigate to the project directory: `cd todolist`
 3. Install dependencies: `npm install` or `yarn install`
 
 ## Usage
@@ -39,6 +39,6 @@ If you'd like to contribute, please follow these steps:
 
 ## Contact
 
-- Your Name
-- Email: your.email@example.com
+- Minh Nguyen
+- Email: minhnguyen.henry@gmail.com
 - Project Link: [https://github.com/minhnguyen1408/todolist](https://github.com/minhnguyen1408/todolist)https://github.com/minhnguyen1408/todolist
